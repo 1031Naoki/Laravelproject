@@ -10,11 +10,11 @@
     </head>
     <body>
         <h1 class="title">
-            {{ $post->title }}
+            BlogName
         </h1>
         <div class="content">
             <div class="content__post">
-                <h3>本文</h3>
+                <h3>{{ $post->title }}</h3>
                 <p>{{ $post->body }}</p>    
             </div>
         </div>
