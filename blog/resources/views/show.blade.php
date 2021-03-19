@@ -12,6 +12,8 @@
         <h1 class="title">
             BlogName
         </h1>
+
+        <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
         <div class="content">
             <div class="content__post">
                 <h3>{{ $post->title }}</h3>
