@@ -28,6 +28,7 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+
     public function edit(Post $post)
     {
         return view('edit')->with(['post' => $post]);
@@ -38,4 +39,5 @@ class PostController extends Controller
         $post->fill($input_post)->save();
         return redirect('/posts/' . $post->id);
     }
+
 }
